@@ -10,6 +10,24 @@
 */
 
 
+class AppFramework {
+  protected:
+    virtual void CaseConverter() = 0;
+    virtual void Searcher() = 0;
+  public:
+};
 
+class UpperCaseApp :public AppFramework {
+  protected:
+    void CaseConverter() {
 
+    }
+};
+
+class SearchApp : public AppFramework {
+  protected:
+    void Searcher() {
+
+    }
+};
 
